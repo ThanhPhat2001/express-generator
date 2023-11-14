@@ -1,0 +1,35 @@
+#Get All articles
+GET http://localhost:8080/api/v1/articles HTTP/1.1
+
+###
+
+#Get a articles by ID
+GET http://localhost:8080/api/v1/articles/(id) HTTP/1.1
+
+###
+
+## Creat a new articles
+POST http://localhost:8080/api/v1/articles HTTP/1.1
+content-type: application/json
+
+{
+    "title": "SamSung Galaxy",
+    "keyword": "samsung, Android",
+    "description": "Samsung Galaxy tab a8",
+    "content": "Modern design, stable performance · Luxurious, compact design, unique colors · Wide screen",
+    "date": "2023-11-20"
+}
+
+###
+## Update a  articles by ID
+PATCH  http://localhost:8080/api/v1/articles/(id) HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+###
+## DELETE a  articles by ID
+DELETE   http://localhost:8080/api/v1/articles/(id) HTTP/1.1
+content-type: application/json
